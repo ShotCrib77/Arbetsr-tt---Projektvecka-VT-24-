@@ -29,13 +29,7 @@ nav {
   align-items: center;
 }
 
-.nav-categories {
-  display:flex;
-  gap: 3rem;
-  font-size: 0.9rem;
-}
-
-.nav-menu-items{
+.nav-menu-items {
   display:flex;
   gap: 3rem;
   margin-left: 1rem;
@@ -50,7 +44,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 7.5rem;
 }
 
 .nav-link {
@@ -91,6 +85,12 @@ nav {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .nav-menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:inherit;
+  }
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -110,4 +110,9 @@ nav {
   .nav-menu.active{
     left: 0;
   }
+
+  #seperator {
+    margin-top: 1.5rem;
+  }
+
 }
